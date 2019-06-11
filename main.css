@@ -1,5 +1,31 @@
-body {
+html body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 12%;
+    height: 100%;
+    background-image: linear-gradient(to right top, #dfe7f4, #d6e6ec, #d4e3e2, #d6dfd9, #d8dad4);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 30%;
+    margin: 0% 0% 5% 0%;
+}
+
+.inputGroup > div {
+    margin-top: 2%;
+
+}
+.inputGroup > div > img {
+    display: flex;
+    justify-content: center;
+}
+
+.inputGroup > div > input {
+    width: 100%;
+    margin-top: 0px;
 }
