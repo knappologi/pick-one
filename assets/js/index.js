@@ -27,7 +27,7 @@ let submit = function(){
  
     $('input').each(function(){
         let addedItem = $(this).val();
-        if (addedItem != '' || !options.includes(addedItem)) {
+        if (addedItem != '' && !options.includes(addedItem)) {
         options.push(addedItem);
         }
         console.log('this is options' + options)
