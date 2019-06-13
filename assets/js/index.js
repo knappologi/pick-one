@@ -23,6 +23,7 @@ $('.addButton').click(addOption);
 let submit = function(){
     if (state = states.PICKONEFORME) {
         winner = '';
+
     }
  
     $('input').each(function(){
@@ -32,7 +33,6 @@ let submit = function(){
         }
         console.log('this is options' + options)
     })
-    console.log(options.length);
     
     if(options.length != 0) {
     while(winner == '') {
@@ -42,7 +42,6 @@ let submit = function(){
     $('.resultGroup').show();
     state = states.PICKONEFORME;
     switchState();
- //   winner = '';
 }
 }
 $('.submit').click(submit);
@@ -62,6 +61,7 @@ let setPickoneForMe = function(){
     $('.resultGroup').append('<h2 class="pickedItem">' + winner + '</h2>');
     $('.inputGroup').hide();
     $('.resultGroup').show();
+    $('.submit').text('Pick another!')
 }
 
 let switchState = function(){
@@ -85,6 +85,7 @@ let setStartState = function(){
     $('.inputGroup').show();
     $('.resultGroup').hide();
     $('.addedOption').remove();
+    $('.submit').text('Go!')
 }
 
 $('.clearButton').click(setStartState);
