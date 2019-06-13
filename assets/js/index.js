@@ -15,6 +15,7 @@ $(function() {
 
 let addOption = function(){
     $('.inputs').append('<input type="text" class="addedOption" placeholder="Something else">');
+    $('.addedOption').focus();
 }
 $('.addButton').click(addOption);
 
@@ -26,7 +27,7 @@ let submit = function(){
  
     $('input').each(function(){
         let addedItem = $(this).val();
-        if (addedItem != '') {
+        if (addedItem != '' || !options.includes(addedItem)) {
         options.push(addedItem);
         }
         console.log('this is options' + options)
