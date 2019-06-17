@@ -4,13 +4,19 @@
     justify-content: center;
     align-items: center;
     margin-top: 12%;
-    font-family: 'PT Mono', monospace;
+    font-family: 'Overpass Mono', monospace;
 }
 
 html {
     background-image: linear-gradient(#dfe7f4, #d6e6ec, #d4e3e2, #d6dfd9, #d8dad4);
     background-repeat: no-repeat;
     height: 100%;
+}
+
+h1 {
+  font-family: 'Overpass Mono', monospace;
+  letter-spacing: 3px;
+  color: #4e5454
 }
 
 .inputGroup {
@@ -37,7 +43,7 @@ html {
 
 input[type=text] {
     background: #f5f7f8ee;
-    font-family: Courier New;
+    font-family: Courier New; 
     border: solid #7d97a8 1px;
     padding: 1em 0.5em;
     margin-bottom: 2px;
@@ -48,7 +54,7 @@ input[type=text] {
     -moz-border-radius: 0;
     background: none;
     border-radius: 0px;
-    font-family: Courier New;
+    font-family: Courier New; 
     color: #291529;
     font-size: 1em;
     padding: 11px 20px 10px 20px;
